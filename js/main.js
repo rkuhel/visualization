@@ -21,8 +21,9 @@ var data = [
   ['december', 43, 32, 4.00]
 ];
 
+
 function drawChart() {
-  window.dataTable = google.visualization.arrayToDataTable(data);
+  var dataTable = google.visualization.arrayToDataTable(data);
 
 	var options = {
 		height : 400,

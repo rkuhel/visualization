@@ -22,7 +22,7 @@ var data = [
 ];
 
 function drawChart() {
-	var dataTable = google.visualization.arrayToDataTable(data);
+  window.dataTable = google.visualization.arrayToDataTable(data);
 
 	var options = {
 		height : 400,
@@ -31,6 +31,6 @@ function drawChart() {
 	};
 
 	var container = document.getElementById('container');
-	var chart = new google.visualization.ComboChart(container);
+	var chart = new google.visualization.LineChart(container);
 	chart.draw(dataTable, options);
 }
